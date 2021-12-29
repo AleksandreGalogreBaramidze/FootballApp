@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/group_61" android:title="@string/matches"/>
+    <item android:icon="@drawable/group_67" android:title="@string/top_players"/>
+    <item android:icon="@drawable/group_65" android:title="@string/videos"/>
+    <item android:icon="@drawable/group_95" android:title="@string/favorites"/>
+    <item android:icon="@drawable/group_63" android:title="@string/settings"/>
+</menu>

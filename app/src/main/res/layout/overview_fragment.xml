@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverviewFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dim_dp_17"
+        android:layout_marginTop="@dimen/dim_dp_86"
+        android:layout_marginEnd="@dimen/dim_dp_17"
+        android:layout_marginBottom="@dimen/dim_dp_75"
+        android:paddingStart="@dimen/dim_dp_17"
+        android:paddingEnd="@dimen/dim_dp_17"
+        app:cardCornerRadius="@dimen/dim_dp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/eventDateAndStadiumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/dim_dp_86"
+            android:layout_marginEnd="@dimen/dim_dp_65"
+            android:foregroundGravity="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/overview_detail_text_color"
+            android:textSize="@dimen/dim_sp_12"
+            android:textStyle="normal"
+            tools:text="2 September 2018 Camp Nou Stadium" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/dim_dp_163"
+            android:layout_marginTop="@dimen/dim_dp_51"
+            android:layout_marginEnd="@dimen/dim_dp_163"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_sp_25"
+            android:textStyle="normal"
+            tools:text="5 : 2" />
+
+        <ImageView
+            android:id="@+id/firstTeamPicture"
+            android:layout_width="@dimen/dim_dp_40"
+            android:layout_height="@dimen/dim_dp_40"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/dim_dp_53"
+            android:layout_marginTop="@dimen/dim_dp_47"
+            android:background="@drawable/dinamo_logo"
+            android:paddingStart="@dimen/dim_dp_53"
+            android:paddingTop="@dimen/dim_dp_47"
+            android:paddingEnd="@dimen/dim_dp_147" />
+
+        <ImageView
+            android:id="@+id/secondTeamPicture"
+            android:layout_width="@dimen/dim_dp_40"
+            android:layout_height="@dimen/dim_dp_40"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dim_dp_47"
+            android:layout_marginEnd="@dimen/dim_dp_53"
+            android:background="@drawable/torpedo_logo"
+            android:paddingStart="@dimen/dim_dp_53"
+            android:paddingTop="@dimen/dim_dp_47"
+            android:paddingEnd="@dimen/dim_dp_147" />
+
+        <TextView
+            android:id="@+id/firstTeamName"
+            android:layout_width="@dimen/dim_dp_53"
+            android:layout_height="@dimen/dim_dp_14"
+            android:layout_marginStart="@dimen/dim_dp_47"
+            android:layout_marginTop="@dimen/dim_dp_93"
+            android:gravity="center"
+            android:textSize="@dimen/dim_sp_12"
+            tools:text="team1" />
+
+        <TextView
+            android:id="@+id/timeIndicator"
+            android:layout_width="@dimen/dim_dp_53"
+            android:layout_height="@dimen/dim_dp_14"
+            android:layout_marginStart="@dimen/dim_dp_160"
+            android:layout_marginTop="@dimen/dim_dp_84"
+            android:gravity="center"
+            android:textSize="@dimen/dim_sp_12"
+            tools:text="time" />
+
+        <TextView
+            android:id="@+id/secondTeamName"
+            android:layout_width="@dimen/dim_dp_53"
+            android:layout_height="@dimen/dim_dp_14"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dim_dp_93"
+            android:layout_marginEnd="@dimen/dim_dp_47"
+            android:gravity="center"
+            android:textSize="@dimen/dim_sp_12"
+            tools:text="team2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/eventsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="234dp" />
+
+        <ImageView
+            android:id="@+id/overviewOptionBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_dp_35"
+            android:layout_marginStart="@dimen/dim_dp_18"
+            android:layout_marginTop="@dimen/dim_dp_123"
+            android:layout_marginEnd="@dimen/dim_dp_18"
+            android:background="@drawable/smallscreen"
+            android:src="@drawable/smallscreen" />
+
+        <TextView
+            android:id="@+id/statisticsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_dp_14"
+            android:layout_marginStart="@dimen/dim_dp_149"
+            android:layout_marginTop="@dimen/dim_dp_133"
+            android:layout_marginEnd="@dimen/dim_dp_149"
+            android:gravity="center"
+            android:text="@string/statistic"
+            android:textColor="@color/options_overview_color"
+            android:textSize="@dimen/dim_sp_12" />
+
+        <TextView
+            android:id="@+id/overViewTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_dp_14"
+            android:layout_marginStart="@dimen/dim_dp_47"
+            android:layout_marginTop="@dimen/dim_dp_133"
+            android:layout_marginEnd="@dimen/dim_dp_240"
+            android:gravity="center"
+            android:text="@string/overview"
+            android:textColor="@color/overview_textcolor"
+            android:textSize="@dimen/dim_sp_12" />
+
+        <TextView
+            android:id="@+id/lineupTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_dp_14"
+            android:layout_marginStart="@dimen/dim_dp_240"
+            android:layout_marginTop="@dimen/dim_dp_133"
+            android:layout_marginEnd="@dimen/dim_dp_47"
+            android:gravity="center"
+            android:text="@string/line_up"
+            android:textColor="@color/options_overview_color"
+            android:textSize="@dimen/dim_sp_12" />
+
+        <ImageView
+            android:id="@+id/statisticsBackGround"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_dp_15"
+            android:layout_marginTop="@dimen/dim_dp_214"
+            android:src="@drawable/halfs" />
+
+        <TextView
+            android:id="@+id/halfIndicator"
+            android:layout_width="@dimen/dim_dp_33"
+            android:layout_height="@dimen/dim_dp_10"
+            android:layout_marginStart="@dimen/dim_dp_18"
+            android:layout_marginTop="@dimen/dim_dp_217"
+            android:layout_marginEnd="@dimen/dim_dp_289"
+            android:text="@string/_1st_half"
+            android:textColor="@color/half_indicator_textcolor"
+            android:textSize="@dimen/dim_sp_9" />
+
+        <TextView
+            android:id="@+id/scoreIndicator"
+            android:layout_width="@dimen/dim_dp_13"
+            android:layout_height="@dimen/dim_dp_10"
+            android:layout_marginStart="@dimen/dim_dp_324"
+            android:layout_marginTop="@dimen/dim_dp_217"
+            android:layout_marginEnd="@dimen/dim_dp_21"
+            android:textColor="@color/half_indicator_textcolor"
+            android:textSize="@dimen/dim_sp_9"
+            tools:text="3:2" />
+
+        <TextView
+            android:id="@+id/ballPossessionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_dp_145"
+            android:layout_marginTop="@dimen/dim_dp_169"
+            android:layout_marginEnd="@dimen/dim_dp_145"
+            android:text="@string/ball_possession"
+            android:textColor="@color/half_indicator_textcolor"
+            android:textSize="@dimen/dim_sp_12" />
+
+        <TextView
+            android:id="@+id/firstTeamPossession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_dp_14"
+            android:layout_marginTop="@dimen/dim_dp_169"
+            android:textColor="@color/half_indicator_textcolor"
+            android:textSize="@dimen/dim_sp_12"
+            tools:text="70%" />
+
+        <TextView
+            android:id="@+id/secondTeamPossession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dim_dp_169"
+            android:layout_marginEnd="@dimen/dim_dp_14"
+            android:textColor="@color/half_indicator_textcolor"
+            android:textSize="@dimen/dim_sp_12"
+            tools:text="30%" />
+
+        <ProgressBar
+            android:id="@+id/possessionProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_dp_5"
+            android:layout_marginStart="@dimen/dim_dp_35"
+            android:layout_marginTop="@dimen/dim_dp_195"
+            android:layout_marginEnd="@dimen/dim_dp_35"
+            android:foregroundGravity="top"
+            android:progressDrawable="@drawable/progressbar_style" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/topBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_dp_200"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/matchPreviewTextView"
+        android:layout_width="@dimen/dim_dp_141"
+        android:layout_height="@dimen/dim_dp_24"
+        android:layout_marginTop="@dimen/dim_dp_31"
+        android:gravity="center_horizontal"
+        android:text="@string/match_preview"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dim_sp_17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameWeekTextView"
+        android:layout_width="@dimen/dim_dp_82"
+        android:layout_height="@dimen/dim_dp_16"
+        android:layout_marginTop="@dimen/dim_dp_52"
+        android:gravity="center_horizontal"
+        android:text="@string/gameweek_3"
+        android:textColor="@color/game_week_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/notificationsImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/path_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ImageView
+        android:id="@+id/backArrowImageView"
+        android:layout_width="@dimen/dim_dp_31"
+        android:layout_height="@dimen/dim_dp_25"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bot_nav_bg_color"
+        android:elevation="@dimen/dim_dp_15"
+        android:paddingTop="@dimen/dim_dp_10"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
