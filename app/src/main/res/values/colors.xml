@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="overview_detail_text_color">#00aa7b</color>
+    <color name="options_overview_color">#8F000000</color>
+    <color name="overview_textcolor">#00aa7b</color>
+    <color name="half_indicator_textcolor">#b0b0b0</color>
+    <color name="game_week_text_color">#77FFFFFF</color>
+    <color name="bot_nav_bg_color">#00aa7b</color>
+    <color name="item_bg_color">#00FFFFFF</color>
 </resources>
